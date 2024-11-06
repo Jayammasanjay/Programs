@@ -36,7 +36,7 @@ public class MajorityElement {
                 count++;
             }
             else{
-                break;
+                count=1;
             }
             if(count>currcount){
                 currcount=count;
