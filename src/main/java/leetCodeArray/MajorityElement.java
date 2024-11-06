@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class MajorityElement {
 //time o(n) space O(1)
     public static void main(String[] args) {
-        int[] arr={3,2,3,1,1,1};
+       // int[] arr={3,2,3,1,1,1};
+        int[] arr={2,2,1,1,1,2,2};
         System.out.println(findMajority(arr));
     }
 
