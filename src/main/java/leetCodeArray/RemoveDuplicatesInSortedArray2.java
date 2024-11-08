@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class RemoveDuplicatesInSortedArray2 {
     public static void main(String[] args) {
-        int[] arr = {1,1,1,2,2,3};
+        int[] arr = {1,1,1,2,2,2,3,3};//1 1
         int res = removeDuplicate(arr);
         for (int i = 0; i < res; i++) {
             System.out.print(arr[i] + " ");
@@ -24,6 +24,7 @@ public class RemoveDuplicatesInSortedArray2 {
         return i;
     }
 }
+
     /*
       public int removeDuplicate(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
@@ -59,5 +60,5 @@ public class RemoveDuplicatesInSortedArray2 {
 
         return count;
     }
-     */
+*/
 
