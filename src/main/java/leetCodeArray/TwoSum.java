@@ -20,6 +20,35 @@ public class TwoSum {
 
             return result;
         }
+        /*
+        import java.util.HashMap;
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+
+        // Create a HashMap to store numbers and their indices
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        // Iterate through the array
+        for (int i = 0; i < nums.length; i++) {
+            // Calculate the complement
+            int complement = target - nums[i];
+
+            // Check if the complement exists in the map
+            if (map.containsKey(complement)) {
+                return new int[] { map.get(complement), i };
+            }
+
+            // Add the current number and its index to the map
+            map.put(nums[i], i);
+        }
+
+        // If no solution is found, throw an exception
+        throw new IllegalArgumentException("No two sum solution");
+    }
+}
+
+         */
 
     public static void main(String[] args) {
         int[] arr={2,7,11,15};
