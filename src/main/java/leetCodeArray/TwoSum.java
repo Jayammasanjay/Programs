@@ -10,8 +10,8 @@ public class TwoSum {
 
             for (int i = 0; i < nums.length; i++) {
                 if (map.containsKey(nums[i])) {
-                    result[0] = i;
-                    result[1] = map.get(nums[i]);
+                    result[1] = i;
+                    result[0] = map.get(nums[i]);
                     return result;
                 } else {
                     map.put(target - nums[i], i);
@@ -52,7 +52,7 @@ class Solution {
 
     public static void main(String[] args) {
         int[] arr={2,7,11,15};
-        int target=17;
+        int target=9;
         int[] ans=twoSum(arr,target);
         for(int i=0;i<ans.length;i++){
             System.out.print(ans[i]+" ");
