@@ -17,7 +17,6 @@ public class FindtheDuplicateNumber {
                     i++;
                     j = i;
                 }
-                continue;
             }
         }
         return 0;

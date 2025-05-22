@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class happyNumber {
     public static void main(String[] args) {
-        int n=18;
+        int n=19;
         System.out.println(check(n));
 
     }
