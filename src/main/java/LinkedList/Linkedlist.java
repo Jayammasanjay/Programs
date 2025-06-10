@@ -9,7 +9,7 @@ public class Linkedlist {
         ll.addFirst(40);
         ll.add(50);
         ll.addLast(100);
-      //  ll.reverse();
+       ll.reverse();
         ll.print();
     }
 
@@ -21,7 +21,7 @@ public class Linkedlist {
             System.out.print(curr.data+" ->");
             curr=curr.next;
         }
-        System.out.println("null");
+       // System.out.println("null");
     }
 
     void add(int e){
