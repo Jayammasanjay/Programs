@@ -5,12 +5,16 @@ public class Linkedlist {
         Linkedlist ll=new Linkedlist();
         ll.add(10);
         ll.add(20);
-        ll.addFirst(30);
-        ll.addFirst(40);
+        ll.add(30);
+       // ll.addFirst(30);
+       // ll.addFirst(40);
         ll.add(50);
         ll.addLast(100);
-       ll.reverse();
+        ll.InsterAtPosition(3,40);
+        System.out.println(ll.size());
+      // ll.reverse();
         ll.print();
+
     }
 
     Node head;
@@ -67,5 +71,36 @@ public class Linkedlist {
             curr=temp;
         }
         head=prev;
+    }
+
+    void InsterAtPosition(int index,int data){
+        if(index==0){
+            addFirst(data);
+        }
+        else {
+            Node temp=new Node(data);
+            int count=0;
+            Node curr=head;
+            while(count<index-1){
+                curr=curr.next;
+                count++;
+
+            }
+            temp.next=curr.next;
+            curr.next=temp;
+        }
+    }
+    int size(){
+        int length=0;
+        if(head==null){
+            throw new RuntimeException("LinkedList is empty"+length);
+        }
+
+        Node curr=head;
+        while(curr.next!=null){
+            length++;
+            curr=curr.next;
+        }
+        return length+1;
     }
 }
