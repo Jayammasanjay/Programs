@@ -3,6 +3,9 @@ package leetCodeArray;
 public class plusOne {
 
         public static int[] plusone(int[] digits) {
+            if(digits.length==0){
+                return new int[] {0};
+            }
             int n=digits.length;
             for(int i=n-1;i>=0;i--) {
                 if(digits[i]<9) {
