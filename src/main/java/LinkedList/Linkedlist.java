@@ -11,7 +11,9 @@ public class Linkedlist {
         ll.add(50);
         ll.addLast(100);
         ll.InsterAtPosition(3,40);
-        System.out.println(ll.size());
+        ll.deleteAtIndex(2);
+      //  ll.deleteFisrt();
+      //  System.out.println(ll.size());
       // ll.reverse();
         ll.print();
 
@@ -102,5 +104,32 @@ public class Linkedlist {
             curr=curr.next;
         }
         return length+1;
+    }
+
+    void deleteFisrt(){
+        if (head==null){
+            return;
+        }
+        Node temp=head.next;
+        head=temp;
+    }
+    void deleteAtIndex(int index){
+        Node curr=head;
+        if(head==null){
+            return;
+        }
+        if (index == 0) {
+            head = head.next;
+            return;
+        }
+        if (curr.next == null) return;
+
+        for(int i=0;i<index-1 && curr.next!=null;i++){
+            if (curr == null || curr.next == null){
+                return;
+            }
+            curr=curr.next;
+        }
+        curr.next=curr.next.next;
     }
 }
