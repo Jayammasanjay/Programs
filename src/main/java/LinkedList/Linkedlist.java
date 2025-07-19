@@ -65,9 +65,9 @@ public class Linkedlist {
     void reverse(){
         if(head==null || head.next==null) return;
         Node curr=head;
-        Node prev=null,temp;
+        Node prev=null;
         while(curr!=null){
-            temp=curr.next;
+           Node temp=curr.next;
             curr.next=prev;
             prev=curr;
             curr=temp;
