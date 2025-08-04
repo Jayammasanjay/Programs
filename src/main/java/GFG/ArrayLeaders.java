@@ -7,7 +7,7 @@ import java.util.List;
 public class ArrayLeaders {
 
     public static void main(String[] args) {
-        int[] arr={16, 17, 4, 3, 5, 2};
+        int[] arr={16, 17, 4, 3, 5, 10};
         List<Integer>res=leaders(arr);
         System.out.println(res);
 
